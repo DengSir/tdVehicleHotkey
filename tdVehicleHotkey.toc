@@ -1,0 +1,6 @@
+## Interface: 80000
+## Title: tdVehicleHotkey
+## Author: DengSir
+## Version: 80000.01
+
+Load.xml
