@@ -10,11 +10,11 @@ RegisterStateDriver(override, 'visibility', '[vehicleui][overridebar]show;hide')
 override:Hide()
 override:SetAttribute('_onshow', [[
     for i = 1, 6 do
-        self:SetBindingClick(false, tostring(i), 'OverrideActionBarButton' .. i)
-
         for _, key in ipairs(table.new(GetBindingKey('ACTIONBUTTON' .. i))) do
             self:SetBindingClick(false, key, 'tdVechicleHotkey')
         end
+
+        self:SetBindingClick(false, tostring(i), 'OverrideActionBarButton' .. i)
     end
 ]])
 override:SetAttribute('_onhide', [[
